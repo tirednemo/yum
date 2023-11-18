@@ -1,15 +1,21 @@
 import './App.css';
 import {Route, Routes} from "react-router-dom";
-import {useState} from "react";
+import {lazy, Suspense, useState} from "react";
 import {AuthProvider} from './components/auth/AuthContext';
 
 import Navigation from "./components/common/Navigation";
 import Footer from "./components/common/Footer";
 import Home from "./components/common/Home"
 import Login from "./components/auth/Login";
-import Register from "./components/auth/Register";
-import Dashboard from "./components/common/Dashboard";
-import Restaurant from "./components/restaurant/Restaurant";
+import Register from './components/auth/Register';
+import Restaurant from './components/restaurant/Restaurant';
+const Dashboard = lazy(() => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(import('./components/common/Dashboard'));
+        }, 2000); // Simulate a 2-second delay
+    });
+});
 
 
 function App() {
@@ -24,7 +30,7 @@ function App() {
 
                 <Routes>
                     <Route path="/" element={<Home/>}/>
-                    <Route path="/dashboard" element={<Dashboard/>}/>
+                    <Route path="/dashboard" element={<Suspense fallback= {<div style={{ textAlign: 'center', lineHeight: '600px' }}><i className="fa-regular fa-circle fa-beat fa-3x"></i><i className="fa-solid fa-circle fa-beat fa-3x"></i><i className="fa-regular fa-circle fa-beat fa-3x"></i></div>}><Dashboard /></Suspense> }/>
                     <Route path="restaurant/:id" element={<Restaurant/>}/>
                 </Routes>
 
