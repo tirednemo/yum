@@ -1,0 +1,76 @@
+[
+  {
+    "id": 1,
+    "name": "Pizza Hut",
+    "logo": "https://upload.wikimedia.org/wikipedia/sco/thumb/d/d2/Pizza_Hut_logo.svg/2177px-Pizza_Hut_logo.svg.png",
+    "priceRange": "$$",
+    "rating": 4.5,
+    "cnt": 100,
+    "hours": "10AM - 10PM",
+    "address": "Dhaka",
+    "dish": [{
+      "id": 1,
+      "dishName": "Pizza Margherita",
+      "logo": "https://www.dominos.co.in/theme2/front/images/menu-images/my-nonveg.webp",
+      "price": 340,
+      "rating": 4.5,
+      "cnt": 100,
+      "cuisine": "Italian",
+      "category": "Pizza",
+      "subCategory": "Hand Stretched"
+    },
+      {
+        "id": 2,
+        "dishName": "Wings",
+        "logo": "https://images.ctfassets.net/l5fkpck1mwg3/1PcnqkCGR0XVyuTM2kj7bf/c0e7ee8f0a9856098a74dcfa42fbfb0e/Bundle_Boneless___Fries_10_count_HoneyBBQ.png",
+        "price": 250,
+        "rating": 4.2,
+        "cnt": 42,
+        "cuisine": "Western",
+        "category": "Appetizer"
+      },
+      {
+        "id": 3,
+        "dishName": "Aarekta Pizza",
+        "logo": "https://www.dominos.co.in/theme2/front/images/menu-images/my-vegpizza.webp",
+        "price": 350,
+        "rating": 4.7,
+        "cnt": 72,
+        "cuisine": "Italian",
+        "category": "Pizza",
+        "subCategory": "Thick Crust"
+      },
+      {
+        "id": 4,
+        "dishName": "Cheesy Blast Pizza",
+        "logo": "https://www.dominos.co.in/files/items/PrimeLoadedL.jpg",
+        "price": 350,
+        "rating": 4.7,
+        "cnt": 72,
+        "cuisine": "Italian",
+        "category": "Pizza",
+        "subCategory": "Pan Pizza"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Domino's Pizza",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Dominos_pizza_logo.svg/768px-Dominos_pizza_logo.svg.png",
+    "priceRange": "$$$",
+    "rating": 4.2,
+    "cnt": 42,
+    "hours": "10AM - 10PM",
+    "address": "Dhaka"
+  },
+  {
+    "id": 3,
+    "name": "Papa John's Pizza",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Papa_John%27s_Logo_2019.svg/1200px-Papa_John%27s_Logo_2019.svg.png",
+    "priceRange": "$",
+    "rating": 3.8,
+    "cnt": 15,
+    "hours": "10AM - 10PM",
+    "address": "Dhaka"
+  }
+]

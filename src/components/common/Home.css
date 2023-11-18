@@ -1,0 +1,66 @@
+.posh-home {
+    height: 100vh;
+    padding-left: 70px;
+}
+
+svg {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.plate {
+    position: absolute;
+    left: 50%;
+    height: 70%;
+    z-index: 5;
+    animation: rotateIn;
+    animation-duration: 1.5s;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+.location-input-container {
+    margin-top: 100px;
+    width: 40%;
+}
+
+.location-input {
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    border-radius: 50px;
+    border: 2px solid #000;
+    text-align: center;
+}
+
+.location-icon {
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    cursor: pointer;
+}
+
+.location-button {
+    width: 100%;
+    margin: 10px 0 0 0;
+    padding: 10px 10px 10px 10px;
+    border-radius: 50px;
+    border: 2px solid #000;
+    background: #000;
+    color: #FFF;
+    text-align: center;
+}
+
+h3 {
+    color: #000;
+    font-size: 32px;
+}
+
+.home-blabla {
+    height: 100vh;
+    padding: 0 200px 30px 200px;
+    text-align: center;
+}
